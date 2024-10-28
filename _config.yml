@@ -56,14 +56,14 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: 渚汐
+disqus_username: false
 
 # Netease settings
 netease_comment: false
 
 # Analytics settings
 # Baidu Analytics
-# ba_track_id: [your track id]
+ba_track_id: cabc36351e17de1f03ef0bfb06dc0636
 
 # Google Analytics
 # ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
@@ -71,12 +71,12 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "Hope you happy,my friend.<br>WHU @animation"
-sidebar-avatar: https://github.com/Yinwei-Yu/Yinwei-Yu.github.io/img/avatar-zhuxi.jpg. # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "Hope you happy,my friend.<br>@ WHU CS"
+sidebar-avatar: https://github.com/Yinwei-Yu/Yinwei-Yu.github.io/blob/master/img/avatar-zhuxi.jpg?raw=true # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
-featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 3 # A tag will be featured if the size of it is more than this condition value
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
