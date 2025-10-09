@@ -12,10 +12,8 @@ baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 future: true
 
 # SNS settings
-RSS: false
+RSS: true
 github_username: Yinwei-Yu
-#facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -83,7 +81,7 @@ chrome-tab-theme-color: "#000000"
 service-worker: true
 
 # MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
+page-mathjax: true
 
 # Friends
 #friends:
