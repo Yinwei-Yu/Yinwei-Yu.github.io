@@ -35,13 +35,13 @@ MIT的lab实现的是一个简化的MapReduce，突出表现在输入为单个�
 
 ### 总体架构：
 
-![structure](./image1.png)
+![structure](/img/post_img/mapreduce-structure.png)
 
 coordinator作为服务器，负责分发Map和Reduce任务。当开始工作后，worker向coordinator注册，并申请任务，worker申请任务时不区分种类，只简单地处理coordinator分发的任务。在Map阶段，worker产生一系列包含键值对的中间文件，命名为mr-X-Y。随后进入Reduce阶段，然后处理输出结果。
 
 整体架构和工作流程较为简单。首先要弄清楚worker和coordinator之间需要的rpc通信函数：
 
-![rpc functions](./image2.png)
+![rpc functions](/img/post_img/mapreduce-rpc.png)
 
 1. Register():worker向coordinator注册自己，coordinator负责维护worker的状态
 2. GetTask():worker申请任务，coordinator负责给该特定id的worker分配等待完成的map或者reduce任务
@@ -55,7 +55,7 @@ coordinator作为服务器，负责分发Map和Reduce任务。当开始工作后
 
 在具体实现代码前，还需要想清楚需要哪些结构体，每个结构体都需要有哪些字段，以及整个的工作流程。
 
-![struct and workflow](./image3.png)
+![struct and workflow](/img/post_img/mapreduce-workflow.png)
 
 在实际coding过程中，发现最初的设计有不足之处，再予以不断完善。比如说，coordinator中的Intermediate从最初的map里套map改成了`map[int][]string`，因为刚开始想错了Intermediate的具体存储方式。
 
