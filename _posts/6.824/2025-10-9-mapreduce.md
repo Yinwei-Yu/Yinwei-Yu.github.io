@@ -6,7 +6,7 @@ date: 2025-10-9
 author: 渚汐
 catalog: true
 tags:
-  - distributed system,分布式系统
+  - 分布式系统
 ---
 
 ## MapReduce 简介
